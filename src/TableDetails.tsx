@@ -7,6 +7,7 @@ import { useImageViewer } from "react-image-viewer-hook";
 
 export const TableDetails = () => {
   const params = useParams();
+  // @ts-ignore
   const tableId: string = params.tableId;
 
   const { getOnClick, ImageViewer } = useImageViewer();

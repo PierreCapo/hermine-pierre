@@ -1,21 +1,12 @@
-import {
-  Table,
-  Progress,
-  Anchor,
-  Text,
-  Group,
-  TextInput,
-  Image,
-} from "@mantine/core";
-import classes from "./Home.module.css";
-import { distance, closest } from "fastest-levenshtein";
+import { Table, Anchor, TextInput, Image } from "@mantine/core";
+import { distance } from "fastest-levenshtein";
 import { useState } from "react";
 import suire from "../public/suire.png";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 
 export function HomeScreen() {
-  const [visibleData, setVisibleData] = useState(data);
+  const [visibleData] = useState(data);
   const [textInputValue, setTextInputValue] = useState("");
   const rows = visibleData
     .map((el) => ({

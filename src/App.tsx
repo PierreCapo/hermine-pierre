@@ -7,7 +7,7 @@ import { TableDetails } from "./TableDetails";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/hermine-pierre",
     element: <HomeScreen />,
   },
   {

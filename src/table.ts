@@ -9,9 +9,20 @@ import carghese from "../public/carghese.jpeg";
 import vizzavona from "../public/vizzavona.jpeg";
 import mattei from "../public/mattei.jpeg";
 import terre_sacree from "../public/terre_sacree.jpeg";
+import saint_florent from "../public/saint_florent.jpeg";
+import corte from "../public/corte.jpeg";
+import bonifacio from "../public/bonifacio.jpeg";
+import calvi from "../public/calvi.jpeg";
+import rogliano from "../public/rogliano.jpeg";
+import valle_di_rostino from "../public/valle_di_rostino.webp";
+import piana from "../public/piana.jpeg";
+import porto_vecchio from "../public/porto_vecchio.jpeg";
+import pietra from "../public/pietra.jpeg";
+import cathedrale from "../public/cathedrale.jpeg";
+import eglise_santa_maria from "../public/eglise_santa_maria.webp";
 
 export const tables = [
-  { tableId: 1, tableName: "Saint-Florent", image: roccapina },
+  { tableId: 1, tableName: "Saint-Florent", image: saint_florent },
   {
     tableId: 2,
     tableName: "Legnu",
@@ -46,28 +57,28 @@ export const tables = [
   {
     tableId: 8,
     tableName: "Eglise de Rogliano",
-    image: roccapina,
+    image: rogliano,
     description: "Joli village sur les hauteurs du Cap-Corse.",
   },
-  { tableId: 9, tableName: "Eglise Santa Maria", image: roccapina },
+  { tableId: 9, tableName: "Eglise Santa Maria", image: eglise_santa_maria },
   {
     tableId: 10,
     tableName: "Corte",
-    image: roccapina,
+    image: corte,
     description: "Ville dans les montagnes du centre de la Corse",
   },
-  { tableId: 11, tableName: "Lucciana", image: roccapina },
+  { tableId: 11, tableName: "Bonifacio", image: bonifacio },
   {
     tableId: 12,
     tableName: "Valle di Rostino",
-    image: roccapina,
+    image: valle_di_rostino,
     description: "Village familiale de la famille Caporossi.",
   },
-  { tableId: 13, tableName: "Citadelle de Calvi", image: roccapina },
-  { tableId: 14, tableName: "Cathédrale d'Ajaccio", image: roccapina },
-  { tableId: 15, tableName: "Phare de la Pietra", image: roccapina },
-  { tableId: 16, tableName: "Calanques de Piana", image: roccapina },
-  { tableId: 17, tableName: "Porto-Vecchio", image: roccapina },
+  { tableId: 13, tableName: "Citadelle de Calvi", image: calvi },
+  { tableId: 14, tableName: "Cathédrale d'Ajaccio", image: cathedrale },
+  { tableId: 15, tableName: "Phare de la Pietra", image: pietra },
+  { tableId: 16, tableName: "Calanques de Piana", image: piana },
+  { tableId: 17, tableName: "Porto-Vecchio", image: porto_vecchio },
   {
     tableId: 18,
     tableName: "Scandola",

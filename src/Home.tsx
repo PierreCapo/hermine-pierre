@@ -1,58 +1,39 @@
 import { Table, Anchor, TextInput, Image } from "@mantine/core";
-import { distance } from "fastest-levenshtein";
+import MiniSearch from "minisearch";
 import { useState } from "react";
 import suire from "../public/suire.png";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 
+let miniSearch = new MiniSearch({
+  fields: ["firstname", "lastname", "table"], // fields to index for full-text search
+  storeFields: ["firstname", "lastname", "table"], // fields to return with search results
+});
+
+miniSearch.addAll(data);
+
 export function HomeScreen() {
-  const [visibleData] = useState(data);
   const [textInputValue, setTextInputValue] = useState("");
-  const rows = visibleData
-    .map((el) => ({
-      ...el,
-      distance: Math.min(
-        distance(textInputValue, el.firstname.toLowerCase()),
-        distance(textInputValue, el.lastname.toLowerCase()),
-        distance(
-          textInputValue,
-          el.firstname.toLowerCase() + " " + el.lastname.toLowerCase()
-        )
-      ),
-    }))
-    .filter((el) => {
-      if (textInputValue.length > 0) {
-        return el.distance <= 3;
-      } else {
-        return true;
-      }
-    })
-    .toSorted((a, b) => {
-      return a.distance >= b.distance ? 1 : -1;
-    })
-    .map((row) => {
-      return (
-        <>
-          <Table.Tr key={row.firstname + row.lastname}>
-            <Table.Td c={"#25737D"}>
-              <i>
-                {row.firstname} <b>{row.lastname}</b>
-              </i>
-            </Table.Td>
-            <Table.Td>
-              <Link
-                to={"/table/" + row.table}
-                style={{ textDecoration: "none" }}
-              >
-                <Anchor component="button" fz="sm" c={"#FF5757"}>
-                  <b>{row.table}</b>
-                </Anchor>
-              </Link>
-            </Table.Td>
-          </Table.Tr>
-        </>
-      );
-    });
+  let searchResults = miniSearch.search(textInputValue, { prefix: true });
+  const source = textInputValue.length === 0 ? data : searchResults;
+  const rows = source.map((row) => {
+    return (
+      <Table.Tr key={row.firstname + row.lastname}>
+        <Table.Td c={"#25737D"}>
+          <i>
+            {row.firstname} <b>{row.lastname}</b>
+          </i>
+        </Table.Td>
+        <Table.Td>
+          <Link to={"/table/" + row.table} style={{ textDecoration: "none" }}>
+            <Anchor component="button" fz="sm" c={"#FF5757"}>
+              <b>{row.table}</b>
+            </Anchor>
+          </Link>
+        </Table.Td>
+      </Table.Tr>
+    );
+  });
 
   return (
     <>

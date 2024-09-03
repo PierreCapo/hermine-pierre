@@ -20,14 +20,20 @@ import porto_vecchio from "../public/porto_vecchio.jpeg";
 import pietra from "../public/pietra.jpeg";
 import cathedrale from "../public/cathedrale.jpeg";
 import eglise_santa_maria from "../public/eglise_santa_maria.webp";
+import scandola from "../public/scandola.jpeg";
 
 export const tables = [
-  { tableId: 1, tableName: "Saint-Florent", image: saint_florent },
+  {
+    tableId: 1,
+    tableName: "Saint-Florent",
+    image: saint_florent,
+    description: "Ancienne cîté gênoise située au fond du golfe éponyme.",
+  },
   {
     tableId: 2,
     tableName: "Legnu",
     image: legnu,
-    description: "Gîte dans les montagnes avec une vue mer époustouflante.",
+    description: "Gîte dans les montagnes de Michèle et Jean-Guy.",
   },
   {
     tableId: 3,
@@ -39,7 +45,7 @@ export const tables = [
     tableId: 4,
     tableName: "Tour Santa Maria",
     image: santa_maria,
-    description: "Tour Gênoise en ruine nageant une eau transparente.",
+    description: "Tour Gênoise en ruine baignant dans une eau transparente.",
   },
   {
     tableId: 5,
@@ -47,12 +53,17 @@ export const tables = [
     image: capo,
     description: "Une des plages les plus célèbres d'Ajaccio",
   },
-  { tableId: 6, tableName: "Moulin Mattei", image: mattei },
+  {
+    tableId: 6,
+    tableName: "Moulin Mattei",
+    image: mattei,
+    description: "Moulin surplombant le village côtier de Centuri.",
+  },
   {
     tableId: 7,
     tableName: "Roccapina",
     image: roccapina,
-    description: "Une des plus belles plage de Corse perdue sur la côte",
+    description: "Une des plus belles plage de Corse perdue sur la côte ouest.",
   },
   {
     tableId: 8,
@@ -67,22 +78,47 @@ export const tables = [
     image: corte,
     description: "Ville dans les montagnes du centre de la Corse",
   },
-  { tableId: 11, tableName: "Bonifacio", image: bonifacio },
+  {
+    tableId: 11,
+    tableName: "Bonifacio",
+    image: bonifacio,
+    description: "Citadelle sur les falaises faisant face à la Sardaigne.",
+  },
   {
     tableId: 12,
     tableName: "Valle di Rostino",
     image: valle_di_rostino,
-    description: "Village familiale de la famille Caporossi.",
+    description: "Village familial de la famille Caporossi.",
   },
-  { tableId: 13, tableName: "Citadelle de Calvi", image: calvi },
-  { tableId: 14, tableName: "Cathédrale d'Ajaccio", image: cathedrale },
-  { tableId: 15, tableName: "Phare de la Pietra", image: pietra },
-  { tableId: 16, tableName: "Calanques de Piana", image: piana },
+  {
+    tableId: 13,
+    tableName: "Citadelle de Calvi",
+    image: calvi,
+    description: "Place forte du XIIIème siècle.",
+  },
+  {
+    tableId: 14,
+    tableName: "Cathédrale d'Ajaccio",
+    image: cathedrale,
+    description: "Cathédrale du XVIème siècle dans le centre-ville.",
+  },
+  {
+    tableId: 15,
+    tableName: "Phare de la Pietra",
+    image: pietra,
+    description: "Phare indiquant l'entrée de l'Île Rousse.",
+  },
+  {
+    tableId: 16,
+    tableName: "Calanques de Piana",
+    image: piana,
+    description: "Roches rouges plongeant dans la mer.",
+  },
   { tableId: 17, tableName: "Porto-Vecchio", image: porto_vecchio },
   {
     tableId: 18,
     tableName: "Scandola",
-    image: roccapina,
+    image: scandola,
     description: "Magnifique réserve naturelle de la côte occidentale.",
   },
   {
@@ -96,7 +132,7 @@ export const tables = [
     tableName: "Carghese",
     image: carghese,
     description:
-      "Beau village de la côte occidental connu pour ces 2 églises se faisant face.",
+      "Beau village de la côte occidentale connu pour ces 2 églises se faisant face.",
   },
   {
     tableId: 21,

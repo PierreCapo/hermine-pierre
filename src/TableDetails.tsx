@@ -35,7 +35,11 @@ export const TableDetails = () => {
           .filter((el) => el.tableid === tableData.tableId)
           .map((el) => (
             <Text ta={"center"} c={colors.primary} fs={"italic"}>
-              {el.firstname} <b>{el.lastname}</b>
+              {el.firstname}{" "}
+              <b>
+                {el.prefix == null ?? ""}
+                {el.lastname}
+              </b>
             </Text>
           ))}
       </Flex>

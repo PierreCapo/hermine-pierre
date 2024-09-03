@@ -12,8 +12,8 @@ const consolidateData = data.map((el) => ({
 }));
 
 const miniSearch = new MiniSearch({
-  fields: ["firstname", "lastname", "tableName"], // fields to index for full-text search
-  storeFields: ["firstname", "lastname", "tableName"], // fields to return with search results
+  fields: ["firstname", "lastname", "tableName", "prefix"], // fields to index for full-text search
+  storeFields: ["firstname", "lastname", "tableName", "prefix"], // fields to return with search results
 });
 
 miniSearch.addAll(consolidateData);
@@ -21,14 +21,18 @@ miniSearch.addAll(consolidateData);
 export function HomeScreen() {
   const [textInputValue, setTextInputValue] = useState("");
 
-  let searchResults = miniSearch.search(textInputValue, { prefix: true });
+  const searchResults = miniSearch.search(textInputValue, { prefix: true });
   const source = textInputValue.length === 0 ? consolidateData : searchResults;
   const rows = source.map((row) => {
     return (
       <Table.Tr key={row.firstname + row.lastname}>
         <Table.Td c={"#25737D"}>
           <Text lineClamp={1} fs={"italic"}>
-            {row.firstname} <b>{row.lastname}</b>
+            {row.firstname}{" "}
+            <b>
+              {row.prefix ?? ""}
+              {row.lastname}
+            </b>
           </Text>
         </Table.Td>
         <Table.Td style={{ width: "50%" }}>

@@ -33,13 +33,14 @@ export const tables = [
     tableId: 2,
     tableName: "Legnu",
     image: legnu,
-    description: "Gîte dans les montagnes de Michèle et Jean-Guy.",
+    description:
+      "Gîte dans les montagnes de Rogliano où vivent Michèle et Jean-Guy.",
   },
   {
     tableId: 3,
     tableName: "Erbalunga",
     image: erbalunga,
-    description: "Un des plus beaux villages du Cap-Corse.",
+    description: "Un des villages les plus bucoliques du Cap-Corse.",
   },
   {
     tableId: 4,
@@ -51,19 +52,21 @@ export const tables = [
     tableId: 5,
     tableName: "Capo di Feno",
     image: capo,
-    description: "Une des plages les plus célèbres d'Ajaccio",
+    description: "Une des plages les plus célèbres d'Ajaccio.",
   },
   {
     tableId: 6,
     tableName: "Moulin Mattei",
     image: mattei,
-    description: "Moulin surplombant le village côtier de Centuri.",
+    description:
+      "Moulin de la célèbre marque d'apéritif surplombant le village côtier de Centuri.",
   },
   {
     tableId: 7,
     tableName: "Roccapina",
     image: roccapina,
-    description: "Une des plus belles plage de Corse perdue sur la côte ouest.",
+    description:
+      "Une des plus belles plages de Corse, perdue sur la côte ouest.",
   },
   {
     tableId: 8,
@@ -71,30 +74,37 @@ export const tables = [
     image: rogliano,
     description: "Joli village sur les hauteurs du Cap-Corse.",
   },
-  { tableId: 9, tableName: "Eglise Santa Maria", image: eglise_santa_maria },
+  {
+    tableId: 9,
+    tableName: "Eglise Santa Maria",
+    image: eglise_santa_maria,
+    description:
+      "Eglise moyennageuse du XVème siècle dans le village de Santa-Maria-Sicche.",
+  },
   {
     tableId: 10,
     tableName: "Corte",
     image: corte,
-    description: "Ville dans les montagnes du centre de la Corse",
+    description:
+      "Ville dans les montagnes du centre de la Corse, notamment célèbre pour son nid d'aigle.",
   },
   {
     tableId: 11,
     tableName: "Bonifacio",
     image: bonifacio,
-    description: "Citadelle sur les falaises faisant face à la Sardaigne.",
+    description: "Citadelle sur les falaises qui contemple la Sardaigne.",
   },
   {
     tableId: 12,
     tableName: "Valle di Rostino",
     image: valle_di_rostino,
-    description: "Village familial de la famille Caporossi.",
+    description: "Village dont sont originaire les Caporossi.",
   },
   {
     tableId: 13,
     tableName: "Citadelle de Calvi",
     image: calvi,
-    description: "Place forte du XIIIème siècle.",
+    description: "Place forte emblématique de Haute-Corse du XIIIème siècle.",
   },
   {
     tableId: 14,
@@ -106,15 +116,22 @@ export const tables = [
     tableId: 15,
     tableName: "Phare de la Pietra",
     image: pietra,
-    description: "Phare indiquant l'entrée de l'Île Rousse.",
+    description:
+      "Phare indiquant l'entrée de l'Île Rousse, clin d'oeil à la bière préférée d'Hermine et Pierre.",
   },
   {
     tableId: 16,
     tableName: "Calanques de Piana",
     image: piana,
-    description: "Roches rouges plongeant dans la mer.",
+    description:
+      "Roches volcaniques aux reflets flamboyants, plongeant dans la mer.",
   },
-  { tableId: 17, tableName: "Porto-Vecchio", image: porto_vecchio },
+  {
+    tableId: 17,
+    tableName: "Porto-Vecchio",
+    image: porto_vecchio,
+    description: "Ville entourée de superbes plages comme Palombaggia.",
+  },
   {
     tableId: 18,
     tableName: "Scandola",
@@ -132,7 +149,7 @@ export const tables = [
     tableName: "Carghese",
     image: carghese,
     description:
-      "Beau village de la côte occidentale connu pour ces 2 églises se faisant face.",
+      "Beau village de la côte occidentale connu pour ses deux églises se faisant face.",
   },
   {
     tableId: 21,
@@ -144,13 +161,13 @@ export const tables = [
     tableId: 22,
     tableName: "Terre Sacrée",
     image: terre_sacree,
-    description: "Jolie plage du golfe d'Ajaccio",
+    description: "Jolie plage du golfe d'Ajaccio.",
   },
   {
     tableId: 23,
     tableName: "Les îles Sanguinaires",
     image: sanguinaires,
     description:
-      "Îles de l'entrée du golfe d'Ajaccio où eut lieu la demande en mariage.",
+      "Îles de l'entrée du golfe d'Ajaccio où a eu lieu la demande en mariage.",
   },
 ];

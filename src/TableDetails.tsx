@@ -30,7 +30,6 @@ export const TableDetails = () => {
         </Flex>
       </Flex>
       <Divider m="lg" />
-
       <Flex gap={"xs"} direction={"column"}>
         {data
           .filter((el) => el.tableid === tableData.tableId)
@@ -44,7 +43,7 @@ export const TableDetails = () => {
       <Divider m="lg" />
       <Anchor onClick={getOnClick(planDeTable)} c={colors.secondary}>
         <Flex justify={"center"} align={"center"} gap={2}>
-          <Text c={colors.secondary}>Plan de salle</Text>
+          <Text c={colors.secondary}>Plan de la salle</Text>
           <LinkIcon />
         </Flex>
       </Anchor>

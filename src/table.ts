@@ -19,8 +19,8 @@ import porto_vecchio from "../public/porto_vecchio.jpeg";
 import cathedrale from "../public/cathedrale.jpeg";
 import eglise_santa_maria from "../public/eglise_santa_maria.webp";
 import scandola from "../public/scandola.jpeg";
-import lucciana from "../public/lucciana.jpeg";
-import bocognano from "../public/bocognano.webp";
+import lucciana from "../public/lucciana.webp";
+import bocognano from "../public/bocognano.jpeg";
 
 export const tables = [
   {

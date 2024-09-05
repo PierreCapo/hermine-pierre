@@ -5,7 +5,6 @@ import erbalunga from "../public/erbalunga.jpeg";
 import legnu from "../public/legnu.jpeg";
 import santa_maria from "../public/santa_maria.jpeg";
 import capo from "../public/capo.jpeg";
-import carghese from "../public/carghese.jpeg";
 import vizzavona from "../public/vizzavona.jpeg";
 import mattei from "../public/mattei.jpeg";
 import terre_sacree from "../public/terre_sacree.jpeg";
@@ -17,10 +16,11 @@ import rogliano from "../public/rogliano.jpeg";
 import valle_di_rostino from "../public/valle_di_rostino.webp";
 import piana from "../public/piana.jpeg";
 import porto_vecchio from "../public/porto_vecchio.jpeg";
-import pietra from "../public/pietra.jpeg";
 import cathedrale from "../public/cathedrale.jpeg";
 import eglise_santa_maria from "../public/eglise_santa_maria.webp";
 import scandola from "../public/scandola.jpeg";
+import lucciana from "../public/lucciana.jpeg";
+import bocognano from "../public/bocognano.webp";
 
 export const tables = [
   {
@@ -114,10 +114,9 @@ export const tables = [
   },
   {
     tableId: 15,
-    tableName: "Phare de la Pietra",
-    image: pietra,
-    description:
-      "Phare indiquant l'entrée de l'Île Rousse, clin d'oeil à la bière préférée d'Hermine et Pierre.",
+    tableName: "Lucciana",
+    image: lucciana,
+    description: "Vieux village bâti sur un piton rocheux au sud de Bastia.",
   },
   {
     tableId: 16,
@@ -146,10 +145,10 @@ export const tables = [
   },
   {
     tableId: 20,
-    tableName: "Carghese",
-    image: carghese,
+    tableName: "Bocognano",
+    image: bocognano,
     description:
-      "Beau village de la côte occidentale connu pour ses deux églises se faisant face.",
+      "Village à l'entrée des montagnes en venant d'Ajaccio. On y trouve de la bonne charcuterie.",
   },
   {
     tableId: 21,

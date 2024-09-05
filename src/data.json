@@ -572,15 +572,15 @@
   },
   {
     "firstname": "Alexia",
-    "prefix": "du ",
-    "lastname": "Ché",
+    "prefix": "de la ",
+    "lastname": "Faverie du Ché",
     "id": 91,
     "tableid": 21
   },
   {
     "firstname": "Olivier",
-    "prefix": "du ",
-    "lastname": "Ché",
+    "prefix": "de la ",
+    "lastname": "Faverie du Ché",
     "id": 92,
     "tableid": 21
   },
@@ -1373,13 +1373,13 @@
   },
   {
     "firstname": "Natacha",
-    "lastname": "Sirard",
+    "lastname": "Siran",
     "id": 222,
     "tableid": 22
   },
   {
     "firstname": "Paul",
-    "lastname": "Sirard",
+    "lastname": "Siran",
     "id": 223,
     "tableid": 22
   },

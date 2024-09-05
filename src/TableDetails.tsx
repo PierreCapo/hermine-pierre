@@ -37,7 +37,7 @@ export const TableDetails = () => {
             <Text ta={"center"} c={colors.primary} fs={"italic"}>
               {el.firstname}{" "}
               <b>
-                {el.prefix == null ?? ""}
+                {el.prefix ?? ""}
                 {el.lastname}
               </b>
             </Text>

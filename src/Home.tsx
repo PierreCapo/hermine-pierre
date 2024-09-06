@@ -35,7 +35,7 @@ export function HomeScreen() {
             </b>
           </Text>
         </Table.Td>
-        <Table.Td style={{ width: "50%" }}>
+        <Table.Td>
           <Anchor
             component={Link}
             to={"/table/" + row.tableName}

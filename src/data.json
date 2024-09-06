@@ -87,6 +87,12 @@
     "tableid": 2
   },
   {
+    "firstname": "Gauthier",
+    "lastname": "Bahuaud",
+    "id": 13,
+    "tableid": 2
+  },
+  {
     "firstname": "Jacques",
     "lastname": "Bahuaud",
     "id": 14,
@@ -1218,18 +1224,6 @@
     "lastname": "Perrachon",
     "id": 196,
     "tableid": 23
-  },
-  {
-    "firstname": "Catherine",
-    "lastname": "Perrachon",
-    "id": 197,
-    "tableid": 18
-  },
-  {
-    "firstname": "Etienne",
-    "lastname": "Perrachon",
-    "id": 198,
-    "tableid": 18
   },
   {
     "firstname": "Marie",
